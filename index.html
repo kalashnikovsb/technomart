@@ -9,6 +9,7 @@
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -45,7 +46,7 @@
           <section class="contacts-header">
             <h2 class="visually-hidden">Блок с контактами</h2>
             <div class="contacts-header__phone">
-              <a class="contacts-header__link">+7 800 555-86-28</a>
+              <a class="contacts-header__link" href="tel:+78005558628">+7 800 555-86-28</a>
             </div>
             <span class="contacts-header__text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</span>
           </section>
@@ -107,23 +108,23 @@
         </div>
         <ul class="features__list">
           <li class="features__item">
-            <p>Материалы</p>
+            <p class="features__text">Материалы</p>
             <a class="button" href="blank.html">На любой вкус</a>
           </li>
           <li class="features__item">
-            <p>Инструмент</p>
+            <p class="features__text">Инструмент</p>
             <a class="button" href="blank.html">На все случаи</a>
           </li>
           <li class="features__item">
-            <p>Техника</p>
+            <p class="features__text">Техника</p>
             <a class="button" href="blank.html">Для стройки</a>
           </li>
           <li class="features__item">
-            <p>Скидки 50%</p>
+            <p class="features__text">Скидки 50%</p>
             <a class="button" href="blank.html">на 350 товаров</a>
           </li>
           <li class="features__item">
-            <p>Доставка</p>
+            <p class="features__text">Доставка</p>
             <a class="button" href="blank.html">Бесплатно</a>
           </li>
         </ul>
@@ -131,7 +132,7 @@
 
       <section class="popular-block">
         <div class="block-header">
-          <h2 class="block-header__title">Популярные товары:</h2>
+          <h2 class="block-header__title content-title content-title--colored">Популярные товары:</h2>
           <a class="button" href="blank.html">Все популярные товары</a>
         </div>
         <ul class="products-list">
@@ -164,7 +165,7 @@
 
       <section class="popular-block">
         <div class="block-header">
-          <h2 class="block-header__title">Популярные производители:</h2>
+          <h2 class="block-header__title content-title content-title--colored">Популярные производители:</h2>
           <a class="button" href="blank.html">Все производители</a>
         </div>
         <ul class="manufacturers">
@@ -213,8 +214,8 @@
 
       <div class="content-block">
         <section class="services">
-          <h2 class="services__title content-block__title">Сервисы</h2>
-          <p class="services__text content-blocks__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <h2 class="services__title content-title">Сервисы</h2>
+          <p class="services__text content-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </section>
         <div class="slider-services">
           <ul class="slider-services__controls">
@@ -224,16 +225,16 @@
           </ul>
           <ul class="slider-services__list">
             <li class="slider-services__item">
-              <p class="slider-services__title">Доставка</p>
-              <p class="slider-services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем, поднимая его на ваш этаж!</p>
+              <p class="slider-services__title content-title content-title--colored">Доставка</p>
+              <p class="slider-services__text content-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем, поднимая его на ваш этаж!</p>
             </li>
             <li class="slider-services__item">
-              <p class="slider-services__title">Гарантия</p>
-              <p class="slider-services__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+              <p class="slider-services__title content-title content-title--colored">Гарантия</p>
+              <p class="slider-services__text content-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
             </li>
             <li class="slider-services__item">
-              <p class="slider-services__title">Кредит</p>
-              <p class="slider-services__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+              <p class="slider-services__title content-title content-title--colored">Кредит</p>
+              <p class="slider-services__text content-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
               <a class="button" href="blank.html">Отправить заявку</a>
             </li>
           </ul>
@@ -242,19 +243,19 @@
 
       <div class="content-block">
         <section class="about">
-          <h2 class="about__title content-block__title">Компания &laquo;Техномарт&raquo;</h2>
-          <p class="about__text content-blocks__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p class="about__text content-blocks__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-          <ul class="list">
-            <li class="list__item">Деловые линии</li>
-            <li class="list__item">Автотрейдинг</li>
-            <li class="list__item">ЖелДорЭкспедиция</li>
+          <h2 class="about__title content-title">Компания &laquo;Техномарт&raquo;</h2>
+          <p class="about__text content-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="about__text content-text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+          <ul class="about__list content-list">
+            <li class="about__item content-list__item">Деловые линии</li>
+            <li class="about__item content-list__item">Автотрейдинг</li>
+            <li class="about__item content-list__item">ЖелДорЭкспедиция</li>
           </ul>
           <a class="button">Подробнее о компании</a>
         </section>
         <section class="contacts">
-          <h2 class="contacts__title content-block__title">Контакты</h2>
-          <p class="contacts__text content-block__text">Вы можете забрать товар сами, заехав в наш офис:</p>
+          <h2 class="contacts__title content-title">Контакты</h2>
+          <p class="contacts__text content-text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <img class="contacts__map" src="#" width="100" height="100" alt="Карта">
           <a class="button" href="blank.html">Заблудились? Напишите нам!</a>
         </section>
@@ -267,7 +268,8 @@
           <a class="logo logo--footer">Техномарт</a>
           <section class="contacts-footer">
             <h2 class="visually-hidden">Блок с контактами</h2>
-            <p class="contacts-footer__text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+            <p class="contacts-footer__text">
+              г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
               <a class="contacts-footer__phone" href="tel:+78005558628">+7 800 555-86-28</a>
             </p>
           </section>
