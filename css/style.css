@@ -85,7 +85,7 @@
 
 body {
   margin: 0;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -155,7 +155,7 @@ body {
 
 .product {
   font-weight: 700;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .product__title {
@@ -185,7 +185,7 @@ body {
 }
 
 .content-text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
 }
 
@@ -204,7 +204,7 @@ body {
 }
 
 .slider-services__text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
 }
 
@@ -252,7 +252,7 @@ body {
 }
 
 .filter {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -285,11 +285,11 @@ body {
 }
 
 .catalog-wrap {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .option-text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: var(--black-color);
