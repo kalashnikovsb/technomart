@@ -232,6 +232,7 @@ body {
 }
 
 .footer-block__title {
+  font-size: 16px;
   color: var(--white-color);
 }
 
