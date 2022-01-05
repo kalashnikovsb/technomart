@@ -318,13 +318,6 @@
   background: var(--logo-click-color);
 }
 
-
-
-
-
-
-
-
 .page-header__bottom {
   background: var(--header-color);
   display: grid;
@@ -358,6 +351,7 @@
   padding-top: 4px;
   padding-bottom: 5px;
   border: 3px solid var(--white-color);
+  margin-bottom: 3px;
 }
 
 .contacts-header__link {
@@ -383,20 +377,63 @@
 .contacts-header__text {
   font-size: 14px;
   color: var(--nav-light-color);
+  display: block;
+  padding-left: 6px;
+  padding-right: 6px;
 }
-
-
-
-
 
 .user-block {
   width: 300px;
+  margin-top: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: start;
+  gap: 10px;
 }
 
 .user-block__button {
   font-size: 21px;
   line-height: 21px;
+  text-decoration: none;
+  color: var(--black-color);
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: var(--white-color);
 }
+
+.user-block__button--signin {
+  min-width: 121px;
+}
+
+.user-block__button--signup {
+  min-width: 150px;
+}
+
+.user-block__button-inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  justify-content: center;
+  margin-left: -8px;
+}
+
+.user-block__button-svg {
+  margin-right: 7px;
+  margin-top: 2px;
+}
+
+
+
+
+
+
+
+
 
 .main-nav__link {
   color: var(--white-color);
