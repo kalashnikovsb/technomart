@@ -95,26 +95,40 @@
 
     <main class="main-content container">
       <div class="features">
+
         <div class="slider-products">
+          <button class="slider-products__control slider-products__control--prev" aria-label="Предыдущий слайд"></button>
+          <button class="slider-products__control slider-products__control--next" aria-label="Следующий слайд"></button>
+
           <ul class="slider-products__list">
-            <li class="slider-products__item slider-products__item--active">
+            <li class="slider-products__item">
               <div class="slider-products__wrap">
                 <p class="slider-products__title">Перфораторы</p>
                 <p class="slider-products__text">Настоящие мужские игрушки</p>
               </div>
-              <a class="button button--slider" href="catalog.html">Открыть каталог</a>
+              <a class="button button--slider" href="catalog.html">Открыть каталог 1</a>
             </li>
             <li class="slider-products__item">
               <div class="slider-products__wrap">
                 <p class="slider-products__title">Дрели</p>
                 <p class="slider-products__text">Соседям на радость!</p>
               </div>
-              <a class="button button--slider" href="catalog.html">Открыть каталог</a>
+              <a class="button button--slider" href="catalog.html">Открыть каталог 2</a>
             </li>
           </ul>
-          <button class="slider-products__control slider-products__control--prev">Предыдущий слайд</button>
-          <button class="slider-products__control slider-products__control--next">Следующий слайд</button>
+
+          <ul class="slider-products__radio-list">
+            <li class="slider-products__radio-item">
+              <input type="radio" class="slider-products__radio-input" id="slide-product1" name="slider-products" checked="">
+              <label class="slider-products__radio-label" for="slide-product1" aria-label="Первый слайд" tabindex="0"></label>
+            </li>
+            <li class="slider-products__radio-item">
+              <input type="radio" class="slider-products__radio-input" id="slide-product2" name="slider-products">
+              <label class="slider-products__radio-label" for="slide-product2" aria-label="Второй слайд" tabindex="0"></label>
+            </li>
+          </ul>
         </div>
+
         <div class="features__item features__item--materials">
           <p class="features__text">Материалы</p>
           <a class="button button--feature" href="blank.html">На любой вкус</a>
@@ -348,6 +362,6 @@
         </section>
       </div>
     </footer>
-
+    <script src="./js/script.js"></script>
   </body>
 </html>
