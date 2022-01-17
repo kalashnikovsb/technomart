@@ -52,9 +52,15 @@
 :root {
   --white-color: #ffffff;
   --black-color: #000000;
+  --yellow-color: #ffbf47;
+  --blue-color: #3bbce3;
+  --purple-color: #dc91d8;
+  --green-color: #8ed78f;
+
 
   --logo-light-color: #ee3643;
   --logo-dark-color: #b52933;
+  --button-hover: #ca2c37;
   --logo-active-light-color: #ba2732;
   --logo-active-dark-color: #8e1e26;
 
@@ -515,12 +521,46 @@
   color: var(--white-color);
 }
 
+.features__item--materials {
+  background: url(../img/icon-bucket.svg) 83% 54% no-repeat var(--yellow-color);
+}
+
+.features__item--tools {
+  background: url(../img/icon-tool.svg) 87% 54% no-repeat var(--blue-color);
+}
+
+.features__item--technics {
+  background: url(../img/icon-tractor.svg) 86% 50% no-repeat var(--purple-color);
+}
+
+.features__item--sales {
+  background: url(../img/icon-sale.svg) 82% 50% no-repeat var(--green-color);
+}
+
+.features__item--delivery {
+  background: url(../img/icon-delivery.svg) 86% 53% no-repeat var(--yellow-color);
+}
+
 .features__text {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 13px;
+}
+
+.label-new {
+  position: relative;
+}
+
+.label-new::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  background: url("../img/label-new.png") 50% 50% no-repeat;
 }
 
 .button {
@@ -536,12 +576,29 @@
   box-sizing: border-box;
 }
 
-.button--feature {
-  width: 135px;
+.button:hover {
+  background: var(--button-hover);
+}
+
+.button:active {
+  background: var(--logo-active-light-color);
 }
 
 .button--slider {
   width: 192px;
+}
+
+.button--feature {
+  background: rgba(255,255,255,0.3);
+  width: 135px;
+}
+
+.button--feature:hover {
+  background: rgba(197,197,197,0.3);
+}
+
+.button--feature:active {
+  background: rgba(169,169,169,0.3);
 }
 
 .slider-products {
@@ -560,6 +617,8 @@
 }
 
 .slider-products__item {
+  box-sizing: border-box;
+  height: 266px;
   padding-top: 23px;
   padding-bottom: 0;
   padding-left: 24px;
@@ -569,6 +628,14 @@
 
 .slider-products__item--active {
   display: block;
+}
+
+.slider-products__item--punchers {
+  background: url("../img/slider-punchers.jpg") 50% 50% no-repeat;
+}
+
+.slider-products__item--drills {
+  background: url("../img/slider-drills.jpg") 50% 50% no-repeat;
 }
 
 .slider-products__title {
@@ -629,8 +696,6 @@
   display: none;
 }
 
-
-
 .slider-products__radio-label {
   width: 10px;
   height: 10px;
@@ -639,8 +704,6 @@
   display: block;
   position: relative;
 }
-
-
 
 .slider-products__radio-input:checked + .slider-products__radio-label::before {
   content: "";
