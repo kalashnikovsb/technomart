@@ -16,7 +16,7 @@
 
     <header class="page-header">
       <div class="page-header__top">
-        <div class="page-header__top-container container">
+        <div class="container container--flex">
           <a class="logo">
             <img class="logo__image" src="img/logo.svg" width="220" height="42" alt="Логотип">
           </a>
@@ -45,18 +45,19 @@
         </div>
       </div>
 
-      <div class="page-header__bottom">
-        <h1 class="page-header__title">Интернет-магазин строительных материалови инструментов для ремонта</h1>
+      <div class="page-header__bottom container container--flex">
+        <section class="page-header__about">
+          <h1 class="page-header__title">Интернет-магазин<br> строительных материалов<br> и&nbsp;инструментов для ремонта</h1>
+        </section>
 
-        <section class="header-contacts">
+
+        <section class="header-contacts page-header__contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
-          <div class="header-contacts__phone">
-            <a class="header-contacts__link">+7 800 555-86-28</a>
-          </div>
+          <a class="header-contacts__phone" href="tel:+78005558628">+7 800 555-86-28</a>
           <p class="header-contacts__text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         </section>
 
-        <section class="user-block">
+        <section class="user-block page-header__user-block">
           <h2 class="visually-hidden">Блок пользователя</h2>
           <a class="user-block__button" href="blank.html">Войти</a>
           <a class="user-block__button" href="blank.html">Регистрация</a>
