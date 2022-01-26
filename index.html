@@ -101,6 +101,64 @@
       </nav>
     </header>
 
+    <main class="page-content container">
+      <section class="features">
+        <h2 class="visually-hidden">Информационный блок со слайдером</h2>
+
+        <ul class="features__list">
+          <li class="features__item features__item--materials features__item--new">
+            <p class="features__item-title">Материалы</p>
+            <a class="features__item-button button button--features" href="blank.html">На любой вкус</a>
+          </li>
+          <li class="features__item features__item--tools">
+            <p class="features__item-title">Инструмент</p>
+            <a class="features__item-button button button--features" href="blank.html">На все случаи</a>
+          </li>
+          <li class="features__item features__item--machinery">
+            <p class="features__item-title">Техника</p>
+            <a class="features__item-button button button--features" href="blank.html">Для стройки</a>
+          </li>
+          <li class="features__item features__item--sales">
+            <p class="features__item-title">Скидки 50%</p>
+            <a class="features__item-button button button--features" href="blank.html">на 350 товаров</a>
+          </li>
+          <li class="features__item features__item--delivery">
+            <p class="features__item-title">Доставка</p>
+            <a class="features__item-button button button--features" href="blank.html">Бесплатно</a>
+          </li>
+
+          <li class="slider-products features__item features__item--slider">
+            <button class="slider-products__button slider-products__button--prev" aria-label="Предыдущий слайд"></button>
+            <button class="slider-products__button slider-products__button--next"aria-label="Следующий слайд"></button>
+
+            <ul class="slider-products__controls-list">
+              <li class="slider-products__control-item">
+                <input class="slider-products__control-input" type="radio" name="slider-products" id="punchers" checked>
+                <label class="slider-products__control-label" for="punchers" aria-label="Первый слайд">Первый слайд</label>
+              </li>
+              <li class="slider-products__control-item">
+                <input class="slider-products__control-input" type="radio" name="slider-products" id="drills">
+                <label class="slider-products__control-label" for="drills" aria-label="Второй слайд">Второй слайд</label>
+              </li>
+            </ul>
+
+            <ul class="slider-products__list">
+              <li class="slider-products__item slider-products__item--punchers slider-products__item--active">
+                <p class="slider-products__slide-title">Перфораторы</p>
+                <p class="slider-products__slide-text">Настоящие мужские игрушки</p>
+                <a class="button button--slider" href="catalog.html">Открыть каталог</a>
+              </li>
+              <li class="slider-products__item slider-products__item--drills">
+                <p class="slider-products__slide-title">Дрели</p>
+                <p class="slider-products__slide-text">Соседям на радость!</p>
+                <a class="button button--slider" href="catalog.html">Открыть каталог</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+
 
     <script src="./js/script.js"></script>
   </body>

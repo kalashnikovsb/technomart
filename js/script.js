@@ -1,9 +1,9 @@
 'use strict';
 
 const productSlides = document.querySelectorAll('.slider-products__item');
-const buttonPrev = document.querySelector('.slider-products__control--prev');
-const buttonNext = document.querySelector('.slider-products__control--next');
-const radioControls = document.querySelectorAll('.slider-products__radio-input');
+const buttonPrev = document.querySelector('.slider-products__button--prev');
+const buttonNext = document.querySelector('.slider-products__button--next');
+const radioControls = document.querySelectorAll('.slider-products__control-input');
 
 
 const showCurrentSlide = () => {
