@@ -536,6 +536,7 @@
 
 
 .button {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 100;
@@ -627,6 +628,20 @@
   opacity: 0.5;
 }
 
+.button--credit {
+  width: 195px;
+  position: relative;
+  z-index: 10;
+  border-radius: 2px;
+}
+
+.button--credit:hover {
+  background: var(--red5);
+}
+
+.button--credit:active {
+  background: var(--red3);
+}
 
 
 
@@ -833,7 +848,7 @@
 
 
 .content-block {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .content-block__inner {
@@ -1041,4 +1056,213 @@
   border-style: solid;
   border-width: 0 0 19px 19px;
   border-color: transparent transparent var(--white) transparent;
+}
+
+
+
+
+.manufacturers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+
+
+.manufacturer {
+  width: 220px;
+  height: 145px;
+  box-sizing: border-box;
+  border: 1px solid var(--gray3);
+}
+
+.manufacturer__link {
+  display: block;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manufacturer__link:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.manufacturer__link:active {
+  opacity: 0.5;
+}
+
+
+
+
+.services {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  background: var(--gray1);
+  padding-top: 65px;
+  padding-bottom: 95px;
+  margin-bottom: 100px;
+}
+
+.services__title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.services__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+
+
+
+.slider-services {
+  display: flex;
+}
+
+.slider-services__controls {
+  width: 240px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.slider-services__controls::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 279px;
+  background: url("../img/shadow.png") 50% 50% no-repeat;
+}
+
+.slider-services__controls-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-services__control {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  padding-left: 23px;
+  padding-right: 0;
+  background: var(--blue3);
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+.slider-services__control--active {
+  background: var(--white);
+  color: var(--blue3);
+  box-shadow: none;
+}
+
+.slider-services__control:hover{
+  background: var(--blue1);
+}
+
+.slider-services__control--active:hover {
+  background: var(--white);
+}
+
+.slider-services__slides-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.slider-services__slide {
+  display: none;
+  padding-top: 48px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 20px;
+  height: 171px;
+  position: relative;
+}
+
+.slider-services__slide--delivery::before {
+  content: "";
+  position: absolute;
+  top: 69px;
+  right: 1px;
+  width: 468px;
+  height: 261px;
+  background: url("../img/image-car.png") 50% 50% no-repeat;
+}
+
+.slider-services__slide--guarantee::before {
+  content: "";
+  position: absolute;
+  top: 46px;
+  right: -8px;
+  width: 389px;
+  height: 283px;
+  background: url("../img/image-guarantee.png") 50% 50% no-repeat;
+}
+
+.slider-services__slide--credit::before {
+  content: "";
+  position: absolute;
+  top: 47px;
+  right: -10px;
+  width: 465px;
+  height: 285px;
+  background: url("../img/image-credit.png") 50% 50% no-repeat;
+}
+
+.slider-services__slide--active {
+  display: block;
+}
+
+.slider-services__slide-title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--blue3);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slider-services__slide-title--delivery {
+  margin-bottom: 31px;
+}
+
+.slider-services__slide-title--guarantee {
+  margin-bottom: 25px;
+}
+
+.slider-services__slide-title--credit {
+  margin-bottom: 30px;
+}
+
+.slider-services__slide-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 25px;
 }
