@@ -553,6 +553,14 @@
   padding-right: 10px;
 }
 
+.button:hover {
+  background: var(--red5);
+}
+
+.button:active {
+  background: var(--red3);
+}
+
 .button--narrow {
   width: 135px;
   background: rgba(255,255,255,0.3);
@@ -568,14 +576,6 @@
 
 .button--wide {
   width: 192px;
-}
-
-.button--wide:hover {
-  background: var(--red5);
-}
-
-.button--wide:active {
-  background: var(--red3);
 }
 
 .button--buy {
@@ -621,6 +621,7 @@
 
 .button--bookmark:hover {
   border-color: var(--blue3);
+  background: var(--white);
 }
 
 .button--bookmark:active {
@@ -632,15 +633,14 @@
   width: 195px;
   position: relative;
   z-index: 10;
-  border-radius: 2px;
 }
 
-.button--credit:hover {
-  background: var(--red5);
+.button--about {
+  width: 220px;
 }
 
-.button--credit:active {
-  background: var(--red3);
+.button--contacts {
+  width: 300px;
 }
 
 
@@ -1105,7 +1105,7 @@
   background: var(--gray1);
   padding-top: 65px;
   padding-bottom: 95px;
-  margin-bottom: 100px;
+  margin-bottom: 71px;
 }
 
 .services__title {
@@ -1265,4 +1265,109 @@
   position: relative;
   z-index: 10;
   margin-bottom: 25px;
+}
+
+
+
+
+.info-block {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.about {
+  width: 540px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+
+.about__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+.about__text:last-of-type {
+  margin-bottom: 2px;
+}
+
+.about__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 19px;
+}
+
+.about__item {
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding-left: 37px;
+  position: relative;
+}
+
+.about__item::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: var(--red1);
+}
+
+.about__item:last-of-type {
+  margin: 0;
+}
+
+
+
+
+.contacts {
+  width: 300px;
+}
+
+.contacts__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.contacts__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.contacts__map-link {
+  display: block;
+  width: 300px;
+  height: 158px;
+  margin-bottom: 25px;
+}
+
+.contacts__map-image {
+  display: block;
+  width: 300px;
+  height: 158px;
+  background: var(--gray2);
 }
