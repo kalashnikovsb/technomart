@@ -129,7 +129,7 @@
 
           <li class="slider-products features__item features__item--slider">
             <button class="slider-products__button slider-products__button--prev" aria-label="Предыдущий слайд"></button>
-            <button class="slider-products__button slider-products__button--next"aria-label="Следующий слайд"></button>
+            <button class="slider-products__button slider-products__button--next" aria-label="Следующий слайд"></button>
 
             <ul class="slider-products__controls-list">
               <li class="slider-products__control-item">
@@ -310,7 +310,7 @@
 
       <div class="info-block container">
         <section class="about">
-          <h2 class="about__title">КОМПАНИЯ «Техномарт»</h2>
+          <h2 class="about__title">Компания «Техномарт»</h2>
           <p class="about__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>ремонта и строительства не оставит равнодушными любителей сэкономить на<br>гастарбайтерах.</p>
           <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
           <ul class="about__list">
@@ -318,7 +318,7 @@
             <li class="about__item">Автотрейдинг</li>
             <li class="about__item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button button--about">Подробнее о компании</a>
+          <a class="button button--about" href="blank.html">Подробнее о компании</a>
         </section>
         <section class="contacts">
           <h2 class="contacts__title">Контакты</h2>
@@ -326,12 +326,127 @@
           <a class="contacts__map-link" href="blank.html">
             <img class="contacts__map-image" src="img/image-map.jpg" width="300" height="158" alt="Как до нас добраться">
           </a>
-          <a class="button button--contacts">Заблудились? Напишите нам!</a>
+          <a class="button button--contacts" href="blank.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
 
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__top">
+          <div class="page-footer__wrap">
+            <a class="logo logo--footer page-footer__logo">
+              <img class="logo__image logo__image--footer" src="img/logo.svg" width="220" height="42" alt="Логотип">
+            </a>
+
+            <p class="page-footer__contacts">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>+7 800 555-86-28</p>
+          </div>
+
+          <section class="page-footer__links">
+            <h2 class="visually-hidden">Список ссылок</h2>
+
+            <ul class="page-footer__nav-list">
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="blank.html">Компания</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="blank.html">Новости</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="blank.html">Доставка</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="blank.html">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="page-footer__catalog-list">
+              <li class="page-footer__catalog-item">
+                <a class="page-footer__catalog-link" href="blank.html">Материалы</a>
+              </li>
+              <li class="page-footer__catalog-item">
+                <a class="page-footer__catalog-link" href="blank.html">Техника</a>
+              </li>
+              <li class="page-footer__catalog-item">
+                <a class="page-footer__catalog-link" href="blank.html">Инструмент</a>
+              </li>
+              <li class="page-footer__catalog-item">
+                <a class="page-footer__catalog-link" href="blank.html">Спецпредложения</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+
+      <div class="page-footer__bottom">
+        <div class="page-footer__bottom-wrap container">
+          <p class="copyright page-footer__copyright">© 2010–2021 Компания «Техномарт»<br>Все права защищены</p>
+
+          <section class="socials page-footer__socials">
+            <h2 class="visually-hidden">Блок социальных сетей</h2>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link socials__link--vk" href="https://vk.com" aria-label="vk.com">vk.com</a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--fb" href="https://facebook.com" aria-label="facebook.com">facebook.com</a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--inst" href="https://instagram.com" aria-label="instagram.com">instagram.com</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="feedback page-footer__feedback">
+            <h2 class="feedback__title">Обратная связь:</h2>
+            <a class="feedback__text" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </section>
+
+          <section class="feedback page-footer__feedback">
+            <h2 class="feedback__title">Разработано &ndash;</h2>
+            <a class="feedback__text" href="https://htmlacademy.ru">htmlacademy.ru</a>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <section class="feedback-popup">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <button class="feedback-popup__close" aria-label="Кнопка закрытия окна"></button>
+
+      <form class="feedback-popup__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback-popup__inner">
+          <div class="feedback-popup__wrap">
+            <label class="feedback-popup__label" for="customer-name">Ваше имя:</label>
+            <input class="feedback-popup__input" type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия" required>
+          </div>
+
+          <div class="feedback-popup__wrap">
+            <label class="feedback-popup__label" for="customer-email">Ваш e-mail:</label>
+            <input class="feedback-popup__input" type="text" name="customer-email" id="customer-email" placeholder="email@example.com" required>
+          </div>
+
+          <div class="feedback-popup__wrap feedback-popup__wrap--wide">
+            <label class="feedback-popup__label" for="customer-message">Текст письма:</label>
+            <textarea class="feedback-popup__textarea" name="customer-message" id="customer-message" placeholder="В свободной форме" required></textarea>
+          </div>
+        </div>
+        <button class="button button--feedback" type="submit">Отправить</button>
+      </form>
+    </section>
+
+    <section class="map-popup">
+      <h2 class="visually-hidden">Окно с подробной картой</h2>
+      <button class="map-popup__close" aria-label="Кнопка закрытия окна"></button>
+      <iframe class="map-popup__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1728.3335539873306!2d30.316593356734153!3d59.96806298479139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1643910029509!5m2!1sru!2sru" width="940" height="447" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 
     <script src="./js/script.js"></script>
   </body>
+
+
 </html>
