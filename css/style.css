@@ -68,6 +68,7 @@
   --blue4: #3d546f;
   --blue5: #1d2739;
   --blue6: #212a3a;
+  --blue7: #3d546f;
 
   --green1: #63a63e;
   --green2: #5fbb2d;
@@ -484,6 +485,96 @@
 .user-block__button--login {
   padding-left: 46px;
   padding-right: 27px;
+}
+
+.user-block__account {
+  width: 300px;
+  height: 45px;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  margin-bottom: 4px;
+}
+
+.user-block__account-link {
+  font-size: 21px;
+  line-height: 21px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.user-block__account-link:active {
+  color: var(--gray2);
+}
+
+.user-block__account-icon-link {
+  margin-top: 5px;
+}
+
+.user-block__logout-link {
+  margin-top: 6px;
+}
+
+.user-block__account-svg {
+  fill: var(--gray2);
+}
+
+.user-block__account-svg:hover {
+  fill: var(--blue7);
+}
+
+.user-block__account-svg:active {
+  fill: var(--gray2);
+}
+
+.user-block__links-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-block__link-item {
+  margin-right: 31px;
+  position: relative;
+}
+
+.user-block__link-item::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: -18px;
+  width: 4px;
+  height: 4px;
+  background: var(--blue3);
+  border-radius: 50%;
+}
+
+.user-block__link-item:last-of-type {
+  margin-right: 0;
+}
+
+.user-block__link-item:last-of-type::before {
+  display: none;
+}
+
+.user-block__link {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--blue3);
+  text-decoration: none;
+}
+
+.user-block__link:hover {
+  color: var(--red1);
+}
+
+.user-block__link:active {
+  color: var(--gray2);
 }
 
 
