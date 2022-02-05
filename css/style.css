@@ -168,6 +168,7 @@
   font-weight: 100;
   color: var(--red1);
   margin-top: 0;
+  margin-bottom: 11px;
 }
 
 .page-header__contacts {
@@ -632,6 +633,11 @@
 
 .page-content {
   padding-top: 59px;
+  padding-bottom: 0;
+}
+
+.page-content--inner {
+  padding-top: 17px;
   padding-bottom: 0;
 }
 
@@ -1846,4 +1852,121 @@
   background: url("../img/icon-close.svg") 50% 50% no-repeat;
   border: none;
   cursor: pointer;
+}
+
+
+
+
+.breadcrumbs__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.breadcrumbs__item {
+  margin-top: 0px;
+  margin-right: 42px;
+}
+
+.breadcrumbs__link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--black);
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.breadcrumbs__link::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -26px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/icon-corner.svg") 50% 50% no-repeat;
+}
+
+.breadcrumbs__link--index {
+  width: 14px;
+  height: 12px;
+  font-size: 0;
+  display: block;
+  margin-top: 7px;
+  background: url("../img/icon-home.svg") 50% 50% no-repeat;
+}
+
+.breadcrumbs__link--index::before {
+  display: none;
+}
+
+
+
+
+.page-title {
+  background: var(--gray1);
+  padding-top: 30px;
+  padding-bottom: 29px;
+  padding-left: 29px;
+  padding-right: 58px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.page-title__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 100;
+  color: var(--blue3);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.catalog__filter {
+  width: 220px;
+  background: lightblue;
+}
+
+.catalog__products {
+  width: 700px;
+  background: lightblue;
+}
+
+
+
+
+.info {
+  padding-top: 65px;
+  padding-bottom: 69px;
+  background: var(--gray1);
+}
+
+.info__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.info__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
