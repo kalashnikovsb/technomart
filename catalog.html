@@ -35,7 +35,7 @@
                 <a class="checkout-block__link checkout-block__link--bookmarks" href="blank.html">Закладки: 0</a>
               </li>
               <li class="checkout-block__item">
-                <a class="checkout-block__link checkout-block__link--cart" href="blank.html">Корзина: 10</a>
+                <a class="checkout-block__link checkout-block__link--cart checkout-block__link--active" href="blank.html">Корзина: 10</a>
               </li>
               <li class="checkout-block__item">
                 <a class="checkout-block__link checkout-block__link--checkout" href="blank.html">Оформить заказ</a>
@@ -133,6 +133,65 @@
       <div class="catalog container">
         <section class="filter catalog__filter">
           <h2 class="filter__title">Фильтр:</h2>
+          <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+
+            <fieldset class="filter__fieldset filter__fieldset--range">
+              <legend class="filter__legend filter__legend--range">Цена:</legend>
+              <div class="filter__range">
+                <div class="filter__range-line">
+                  <div class="filter__range-circle filter__range-from"></div>
+                  <div class="filter__range-circle filter__range-to"></div>
+                </div>
+              </div>
+              <div class="filter__price-wrap">
+                <input class="filter__price-input filter__price-from" name="price-from" value="0">
+                &ndash;
+                <input class="filter__price-input filter__price-to" name="price-to" value="30000">
+              </div>
+            </fieldset>
+
+            <fieldset class="filter__fieldset filter__fieldset--manufacturers">
+              <legend class="filter__legend filter__legend--manufacturers">Производители:</legend>
+              <ul class="filter__inputs-list">
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="checkbox" name="bosch" value="bosch" id="bosch">
+                  <label class="filter__label" for="bosch">Bosch</label>
+                </li>
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="checkbox" name="interskol" value="interskol" id="interskol">
+                  <label class="filter__label" for="interskol">Интерскол</label>
+                </li>
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="checkbox" name="makita" value="makita" id="makita">
+                  <label class="filter__label" for="makita">Makita</label>
+                </li>
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="checkbox" name="dewalt" value="dewalt" id="dewalt">
+                  <label class="filter__label" for="dewalt">Dewalt</label>
+                </li>
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="checkbox" name="hitachi" value="hitachi" id="hitachi">
+                  <label class="filter__label" for="hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filter__fieldset filter__fieldset--power">
+              <legend class="filter__legend filter__legend--power">Питание:</legend>
+              <ul class="filter__inputs-list">
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="radio" name="power-type" value="with-battery" id="with-battery">
+                  <label class="filter__label" for="with-battery">Аккумуляторные</label>
+                </li>
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="radio" name="power-type" value="acdc" id="acdc">
+                  <label class="filter__label" for="acdc">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <button class="filter__button" type="submit">Показать</button>
+          </form>
         </section>
 
         <div class="products catalog__products">
@@ -141,22 +200,22 @@
 
             <ul class="sorting__options-list">
               <li class="sorting__option-item">
-                <a class="sorting__option">По цене</a>
+                <a class="sorting__option sorting__option--active">По цене</a>
               </li>
               <li class="sorting__option-item">
-                <a class="sorting__option">По типу</a>
+                <a class="sorting__option" href="blank.html">По типу</a>
               </li>
               <li class="sorting__option-item">
-                <a class="sorting__option">По функционалу</a>
+                <a class="sorting__option" href="blank.html">По функционалу</a>
               </li>
             </ul>
 
             <ul class="sorting__triangles-list">
               <li cass="sorting__triangle-item">
-                <a class="sorting__triangle sorting__triangle--less-more"></a>
+                <a class="sorting__triangle sorting__triangle--less-more" href="blank.html">Сначала меньше</a>
               </li>
               <li cass="sorting__triangle-item">
-                <a class="sorting__triangle sorting__triangle--more-less"></a>
+                <a class="sorting__triangle sorting__triangle--more-less" href="blank.html">Сначала больше</a>
               </li>
             </ul>
           </section>
@@ -277,6 +336,24 @@
               <span class="product__new-price">12500 р.</span>
             </li>
           </ul>
+
+          <section class="pagination">
+            <h2 class="visually-hidden">Постраничная навигация</h2>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--active">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="blank.html">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="blank.html">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--next" href="blank.html">Следующая</a>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
 
