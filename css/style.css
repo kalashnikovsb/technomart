@@ -2232,6 +2232,10 @@
   margin-bottom: 0;
 }
 
+.filter__radio {
+  display: none;
+}
+
 .filter__checkbox {
   display: none;
 }
@@ -2239,6 +2243,68 @@
 .filter__label {
   font-size: 15px;
   line-height: 19px;
+  position: relative;
+}
+
+.filter__checkbox + .filter__label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -35px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/icon-checkbox-off.svg") 50% 50% no-repeat;
+}
+
+.filter__checkbox + .filter__label:hover::before {
+  background: url("../img/icon-checkbox-hover-off.svg") 50% 50% no-repeat;
+}
+
+.filter__checkbox:disabled + .filter__label::before {
+  background: url("../img/icon-checkbox-disabled-off.svg") 50% 50% no-repeat;
+}
+
+.filter__checkbox:checked + .filter__label::before {
+  width: 27px;
+  background: url("../img/icon-checkbox-on.svg") 50% 50% no-repeat;
+}
+
+.filter__checkbox:checked + .filter__label:hover::before {
+  background: url("../img/icon-checkbox-hover-on.svg") 50% 50% no-repeat;
+}
+
+.filter__checkbox:checked:disabled + .filter__label::before {
+  background: url("../img/icon-checkbox-disabled-on.svg") 50% 50% no-repeat;
+}
+
+.filter__radio + .filter__label::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/icon-radio-off.svg") 50% 50% no-repeat;
+}
+
+.filter__radio + .filter__label:hover::before {
+  background: url("../img/icon-radio-hover-off.svg") 50% 50% no-repeat;
+}
+
+.filter__radio:disabled + .filter__label::before {
+  background: url("../img/icon-radio-disabled-off.svg") 50% 50% no-repeat;
+}
+
+.filter__radio:checked + .filter__label::before {
+  background: url("../img/icon-radio-on.svg") 50% 50% no-repeat;
+}
+
+.filter__radio:checked + .filter__label:hover::before {
+  background: url("../img/icon-radio-hover-on.svg") 50% 50% no-repeat;
+}
+
+.filter__radio:checked:disabled + .filter__label::before {
+  background: url("../img/icon-radio-disabled-on.svg") 50% 50% no-repeat;
 }
 
 .filter__button {
