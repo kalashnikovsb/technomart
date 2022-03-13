@@ -1754,7 +1754,7 @@
   padding-left: 80px;
   padding-right: 80px;
   position: fixed;
-  bottom: 352px;
+  bottom: 180px;
   left: calc(50% - 318px);
   background: var(--white);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
@@ -1763,6 +1763,11 @@
 
 .feedback-popup--show {
   display: block;
+  animation: bounce 0.6s;
+}
+
+.feedback-popup--error {
+  animation: shake 0.6s;
 }
 
 .feedback-popup::before {
@@ -1859,7 +1864,7 @@
   height: 447px;
   background: black;
   position: fixed;
-  bottom: 335px;
+  bottom: 180px;
   left: calc(50% - 478px);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   display: none;
@@ -1868,6 +1873,7 @@
 
 .map-popup--show {
   display: block;
+  animation: bounce 0.6s;
 }
 
 .map-popup::before {
@@ -2493,4 +2499,44 @@
   gap: 10px;
   padding-top: 37px;
   padding-bottom: 37px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
