@@ -2453,6 +2453,7 @@
 
 .cart-popup--show {
   display: block;
+  animation: bounce 0.6s;
 }
 
 .cart-popup::before {
