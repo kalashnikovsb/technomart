@@ -1754,7 +1754,7 @@
   padding-left: 80px;
   padding-right: 80px;
   position: fixed;
-  bottom: 180px;
+  bottom: 20%;
   left: calc(50% - 318px);
   background: var(--white);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
@@ -1864,7 +1864,7 @@
   height: 447px;
   background: black;
   position: fixed;
-  bottom: 180px;
+  bottom: 20%;
   left: calc(50% - 478px);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   display: none;
@@ -2439,7 +2439,7 @@
 
 .cart-popup {
   position: fixed;
-  bottom: 0;
+  bottom: 20%;
   left: 50%;
   width: 620px;
   height: 282px;
