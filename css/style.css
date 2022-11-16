@@ -122,6 +122,8 @@
 
 .container {
   width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: auto;
 }
 
@@ -215,7 +217,6 @@
 }
 
 .form-search {
-  background: red;
   width: 270px;
   height: 42px;
   position: relative;
@@ -563,10 +564,6 @@
 
 .user-block__link:active {
   color: var(--gray2);
-}
-
-.main-nav {
-  background: red;
 }
 
 .main-nav__list {
@@ -920,7 +917,6 @@
   height: 266px;
   box-sizing: border-box;
   color: var(--white);
-  background: black;
   padding-top: 23px;
   padding-bottom: 10px;
   padding-left: 24px;
@@ -1774,7 +1770,6 @@
 .map-popup {
   width: 940px;
   height: 447px;
-  background: black;
   position: fixed;
   bottom: 20%;
   left: calc(50% - 478px);

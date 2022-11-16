@@ -10,24 +10,21 @@
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
-
     <header class="page-header">
       <div class="page-header__top">
         <div class="container container--flex">
           <a class="logo">
             <img class="logo__image" src="img/logo.svg" width="220" height="42" alt="Логотип">
           </a>
-
           <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
             <input class="form-search__input" type="text" name="search-form-value" placeholder="Поиск:" required>
             <button class="form-search__button" type="submit" aria-label="Отправить форму">
               <svg class="form-search__button-image" width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04 17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 1 1 1.41-1.41ZM7.5 2a5.5 5.5 0 1 0 .01 11.01A5.5 5.5 0 0 0 7.5 2Z"/></svg>
             </button>
           </form>
-
           <section class="checkout-block">
             <h2 class="visually-hidden">Блок оформления заказа</h2>
             <ul class="checkout-block__list">
@@ -44,18 +41,15 @@
           </section>
         </div>
       </div>
-
       <div class="page-header__bottom container container--flex">
         <section class="page-header__about">
           <h1 class="page-header__title">Интернет-магазин<br> строительных материалов<br> и&nbsp;инструментов для ремонта</h1>
         </section>
-
         <section class="header-contacts page-header__contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
           <a class="header-contacts__phone" href="tel:+78005558628">+7 800 555-86-28</a>
           <p class="header-contacts__text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         </section>
-
         <section class="user-block page-header__user-block">
           <h2 class="visually-hidden">Блок пользователя</h2>
           <ul class="user-block__buttons-list">
@@ -73,7 +67,6 @@
           </ul>
         </section>
       </div>
-
       <nav class="main-nav container">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -100,11 +93,9 @@
         </ul>
       </nav>
     </header>
-
     <main class="page-content">
       <section class="features container">
         <h2 class="visually-hidden">Информационный блок со слайдером</h2>
-
         <ul class="features__list">
           <li class="features__item features__item--materials features__item--new">
             <p class="features__item-title">Материалы</p>
@@ -126,11 +117,9 @@
             <p class="features__item-title">Доставка</p>
             <a class="features__item-button button button--narrow" href="blank.html">Бесплатно</a>
           </li>
-
           <li class="slider-products features__item features__item--slider">
             <button class="slider-products__button slider-products__button--prev" aria-label="Предыдущий слайд"></button>
             <button class="slider-products__button slider-products__button--next" aria-label="Следующий слайд"></button>
-
             <ul class="slider-products__controls-list">
               <li class="slider-products__control-item">
                 <input class="slider-products__control-input" type="radio" name="slider-products" id="punchers" checked>
@@ -141,7 +130,6 @@
                 <label class="slider-products__control-label" for="drills" aria-label="Второй слайд">Второй слайд</label>
               </li>
             </ul>
-
             <ul class="slider-products__list">
               <li class="slider-products__item slider-products__item--punchers slider-products__item--active">
                 <p class="slider-products__slide-title">Перфораторы</p>
@@ -157,13 +145,11 @@
           </li>
         </ul>
       </section>
-
       <section class="content-block container">
         <div class="content-block__inner">
           <h2 class="content-block__title">Популярные товары</h2>
           <a class="content-block__button button button--wide" href="blank.html">Все популярные товары</a>
         </div>
-
         <ul class="products-list">
           <li class="product">
             <div class="product__inner">
@@ -177,7 +163,6 @@
             <span class="product__old-price">32500 р.</span>
             <span class="product__new-price">25500 р.</span>
           </li>
-
           <li class="product product--new">
             <div class="product__inner">
               <a class="product__buy button button--buy" href="blank.html">Купить</a>
@@ -190,7 +175,6 @@
             <span class="product__old-price">22500 р.</span>
             <span class="product__new-price">15500 р.</span>
           </li>
-
           <li class="product">
             <div class="product__inner">
               <a class="product__buy button button--buy" href="blank.html">Купить</a>
@@ -203,7 +187,6 @@
             <span class="product__old-price">30500 р.</span>
             <span class="product__new-price">25500 р.</span>
           </li>
-
           <li class="product product--new">
             <div class="product__inner">
               <a class="product__buy button button--buy" href="blank.html">Купить</a>
@@ -218,7 +201,6 @@
           </li>
         </ul>
       </section>
-
       <section class="content-block container">
         <div class="content-block__inner">
           <h2 class="content-block__title">Популярные производители:</h2>
@@ -267,7 +249,6 @@
           </li>
         </ul>
       </section>
-
       <section class="services">
         <div class="container">
           <h2 class="services__title">Сервисы</h2>
@@ -307,7 +288,6 @@
           </div>
         </div>
       </section>
-
       <div class="info-block container">
         <section class="about">
           <h2 class="about__title">Компания «Техномарт»</h2>
@@ -330,7 +310,6 @@
         </section>
       </div>
     </main>
-
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__top">
@@ -338,13 +317,10 @@
             <a class="logo logo--footer page-footer__logo">
               <img class="logo__image logo__image--footer" src="img/logo.svg" width="220" height="42" alt="Логотип">
             </a>
-
             <p class="page-footer__contacts">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>+7 800 555-86-28</p>
           </div>
-
           <section class="page-footer__links">
             <h2 class="visually-hidden">Список ссылок</h2>
-
             <ul class="page-footer__nav-list">
               <li class="page-footer__nav-item">
                 <a class="page-footer__nav-link" href="blank.html">Компания</a>
@@ -362,7 +338,6 @@
                 <a class="page-footer__nav-link" href="blank.html">Контакты</a>
               </li>
             </ul>
-
             <ul class="page-footer__catalog-list">
               <li class="page-footer__catalog-item">
                 <a class="page-footer__catalog-link" href="blank.html">Материалы</a>
@@ -380,12 +355,9 @@
           </section>
         </div>
       </div>
-
-
       <div class="page-footer__bottom">
         <div class="page-footer__bottom-wrap container">
           <p class="copyright page-footer__copyright">© 2010–2021 Компания «Техномарт»<br>Все права защищены</p>
-
           <section class="socials page-footer__socials">
             <h2 class="visually-hidden">Блок социальных сетей</h2>
             <ul class="socials__list">
@@ -400,12 +372,10 @@
               </li>
             </ul>
           </section>
-
           <section class="feedback page-footer__feedback">
             <h2 class="feedback__title">Обратная связь:</h2>
             <a class="feedback__text" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </section>
-
           <section class="feedback page-footer__feedback">
             <h2 class="feedback__title">Разработано &ndash;</h2>
             <a class="feedback__text" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
@@ -413,23 +383,19 @@
         </div>
       </div>
     </footer>
-
     <section class="feedback-popup">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <button class="feedback-popup__close" aria-label="Кнопка закрытия окна"></button>
-
       <form class="feedback-popup__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-popup__inner">
           <div class="feedback-popup__wrap">
             <label class="feedback-popup__label" for="customer-name">Ваше имя:</label>
             <input class="feedback-popup__input" type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия">
           </div>
-
           <div class="feedback-popup__wrap">
             <label class="feedback-popup__label" for="customer-email">Ваш e-mail:</label>
             <input class="feedback-popup__input" type="email" name="customer-email" id="customer-email" placeholder="email@example.com">
           </div>
-
           <div class="feedback-popup__wrap feedback-popup__wrap--wide">
             <label class="feedback-popup__label" for="customer-message">Текст письма:</label>
             <textarea class="feedback-popup__textarea" name="customer-message" id="customer-message" placeholder="В свободной форме"></textarea>
@@ -438,13 +404,11 @@
         <button class="button button--feedback" type="submit">Отправить</button>
       </form>
     </section>
-
     <section class="map-popup">
       <h2 class="visually-hidden">Окно с подробной картой</h2>
       <button class="map-popup__close" aria-label="Кнопка закрытия окна"></button>
       <iframe class="map-popup__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1728.3335539873306!2d30.316593356734153!3d59.96806298479139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1643910029509!5m2!1sru!2sru" width="940" height="447" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
-
     <section class="cart-popup">
       <button class="cart-popup__close" aria-label="Кнопка закрытия окна"></button>
       <h2 class="cart-popup__title">Товар добавлен в корзину!</h2>
@@ -453,9 +417,6 @@
         <a class="button button--white" href="blank.html">Продолжить покупки</a>
       </div>
     </section>
-
-    <script src="./js/script.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
-
-
 </html>
